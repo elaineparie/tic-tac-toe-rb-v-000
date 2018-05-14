@@ -28,9 +28,9 @@ end
 def move(board, index, token)
   board[index] = token
   if turn_count(board).even?
-    puts "X"
+    token = "X"
   elsif turn_count(board).odd?
-    puts "O"
+    token = "O"
   end
 end
 
@@ -56,9 +56,9 @@ def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
     if turn_count(board).even?
-      puts "X"
+      token = "X"
     elsif turn_count(board).odd?
-      puts "O"
+      token = "O"
     end
     index = input_to_index(input)
     if valid_move?(board, index)
