@@ -133,10 +133,9 @@ def play(board)
   input = gets
   while !over?(board)
     turn(board)
-  elsif won?(board)
+if won?(board)
     puts "Congratulations X!"
-  else draw?(board)
+  elsif draw?(board)
     puts "Cat's Game!"
   end
-end
 end
