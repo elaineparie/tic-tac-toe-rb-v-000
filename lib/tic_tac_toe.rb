@@ -131,6 +131,7 @@ end
 
 def play(board)
   input = gets.strip
+  input_to_index(input)
   while !over?(board)
     turn(board)
   end
