@@ -130,8 +130,7 @@ end
 
 
 def play(board)
-  input = gets.strip
-  input_to_index(input)
+  #input = gets.strip
   while !over?(board)
     turn(board)
   end
