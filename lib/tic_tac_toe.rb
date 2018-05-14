@@ -39,7 +39,7 @@ end
 end
 
 def valid_move?(board, index)
-  if index.between?(0,8) && !position_taken?(board,index) 
+  if index.between?(0,8) && !position_taken?(board,index)
     true
   else
     nil
@@ -52,7 +52,7 @@ def turn(board)
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(board, index)
-      move(board, index, token)
+      move(board, index, "X")
       display_board(board)
     else
       turn(board)
