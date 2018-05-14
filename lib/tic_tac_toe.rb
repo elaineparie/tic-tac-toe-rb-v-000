@@ -32,7 +32,7 @@ def move(board, index, token)
   elsif turn_count(board).odd?
     puts "O"
   end
-
+end
 
 def position_taken?(board, index)
 if board[index] == "X" || board[index] == "O"
